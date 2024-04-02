@@ -1,11 +1,14 @@
 const express = require("express");
 const connectDB = require('./config/db');
 const notesRoutes = require('./routes/notes');
+const cors = require('cors');
 //To store data in request.body i:e we use body-parser
 const bodyParser = require("body-parser");
 
 //to start express
 const app = express();
+// Enable CORS for all routes
+app.use(cors());
 
 const PORT = process.env.PORT || 8080;
 
