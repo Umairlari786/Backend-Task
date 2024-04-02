@@ -11,6 +11,7 @@ const connectDB = async()=>{
             useUnifiedTopology: true, // Adding this option for unified topology
         });
         console.log("connected with database");
+        console.log(process.env.MONGO_URI);
     }
 
     catch(err){
