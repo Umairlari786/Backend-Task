@@ -10,7 +10,6 @@ const connectDB = async()=>{
             useNewUrlParser: true, // Corrected typo here
             useUnifiedTopology: true, // Adding this option for unified topology
         });
-        console.log("connected with database");
         console.log(process.env.MONGO_URI);
     }
 
